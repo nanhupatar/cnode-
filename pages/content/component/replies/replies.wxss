@@ -1,0 +1,66 @@
+/* pages/content/component/replies/replies.wxss */
+@import "/static/css/common.wxss";
+@import '/towxml/style/main.wxss';
+@import '/towxml/style/theme/light.wxss';
+
+.replies-container{
+    background: #fff;
+}
+.replies-container  .replie-changes{
+    color: #888;
+    font-size: 24rpx;
+    margin-top: 10rpx;
+}
+.replies-container .head{
+    width: 90rpx;
+    height: 90rpx;
+    background: #efefef;
+    margin-right: 40rpx;
+    border-radius: 50%;
+}
+.replies-container .head .img{
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+}
+.replies-container .top{
+    font-size: 28rpx;
+    border-bottom: 2rpx solid #efefef; 
+    padding: 26rpx 38rpx; 
+}
+.replies-container  .replie-item{
+    position: relative;
+    padding: 38rpx; 
+    border-bottom: 2rpx solid #efefef; 
+}
+.replies-container  .replie-author{
+    color: #333;
+    font-size: 28rpx;
+}
+.replies-container .operation{
+    position: absolute;
+    right: 38rpx;
+    top: 32rpx;
+}
+.replies-container .operation .iconfont{
+    font-size: 60rpx;
+    color: #888;
+}
+.replies-container .operation  .icon-icon_reply{
+    font-size: 40rpx;
+}
+.replies-container .operation  .zan-count{
+     font-size: 28rpx;
+    color: #888;
+    margin-left:12rpx;
+    margin-right:40rpx;
+}
+.replies-container .item-wrap{
+    font-size: 30rpx;
+}
+.replies-container  .replie-changes .bottom{
+    margin-top: 10rpx;
+}
+.replies-container .floor{
+    color: #80bd01;
+}

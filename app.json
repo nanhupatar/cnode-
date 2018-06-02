@@ -1,0 +1,14 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/content/content",
+        "pages/user/user"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "首页",
+        "navigationStyle": "default",
+        "navigationBarBackgroundColor": "#444"
+    },
+    "debug": true
+}

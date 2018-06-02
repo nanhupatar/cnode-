@@ -1,0 +1,32 @@
+<!--pages/content/component/replies/replies.wxml-->
+<view class="replies-container">
+    <view class="top">{{topicData.replies.length}} 条回复</view>
+    <view class="replies-list">
+        <view class="replie-item" wx:for="{{topicData.replies}}" wx:for-index="index" wx:for-item="repliItem" wx:key="repliItem.id">
+            <view class="item-header  dis-flex">
+                 <navigator  hover-class="none"  url="/pages/user/user?loginname={{repliItem.author.loginname}}">
+                    <view class="head"><image class="img" src="{{repliItem.author.avatar_url}}"></image></view>
+                </navigator>
+                <view class="replie-changes">
+                    <view>
+                        <text class="replie-author" decode="true">{{repliItem.author.loginname}}&nbsp;&nbsp;</text>
+                        <text class="tips is-top" wx:if="{{repliItem.author.loginname === topicData.author.loginname}}" >作者</text>
+                    </view>
+                    <view class="bottom">
+                        <text class="floor">{{index+1}}楼</text><text class="dot"></text>
+                        <text>{{repliItem.create_at}}前</text>
+                    </view>
+                </view>
+                <view class="operation">
+                    <text bindtap="_tapReplyUps" data-repliItemIdx="{{index}}" data-id="{{repliItem.id}}" class="iconfont icon-zan" style="color:{{repliItem.is_uped ? '#80bd01': '' }};"></text>
+                    <text class="zan-count">{{repliItem.ups}}</text>
+                    <text data-replieId="{{repliItem.id}}" data-loginname="{{'@'+repliItem.author.loginname}}" bindtap="_tapReply" class="iconfont icon-icon_reply reply"></text>
+                </view>
+            </view>
+            <view class="item-wrap">
+                <import src="../../../../towxml/entry.wxml"/> 
+                <template is="entry" data="{{...repliItem.content}}"/> 
+            </view>
+        </view>
+    </view>
+</view>

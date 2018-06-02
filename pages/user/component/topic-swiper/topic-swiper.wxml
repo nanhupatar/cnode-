@@ -1,0 +1,22 @@
+<!--pages/user/component/topic-swiper/topic-swiper.wxml-->
+<view class="swiper-indicator">
+    <text wx:for="{{indicatorArr}}" 
+                wx:key="{{index}}" 
+                data-index="{{index}}"
+                bindtap="_tapIndicator" 
+                class="indicator-item" 
+                    style="color:{{swiperCurrent === index? '#fff' : '' }};">{{item}}</text>
+    <view class="slider-line" style="transform: translateX({{swiperCurrent * 100}}%);"></view>
+</view>
+
+<swiper bindchange="_topicSwipreChange" indicator-dots="{{false}}" class="topic-swipre" current="{{swiperCurrent}}">
+    <swiper-item class="swiper-item">
+        <slot name="recent-replies"></slot>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+        <slot name="recent-topics"></slot>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+        <slot name="collect-topic"></slot>
+    </swiper-item>
+</swiper>

@@ -1,0 +1,8 @@
+<touchGesture  bind:bindCurrentGesture="onCurrentGesture">
+    <view class="container">
+        <articleList listArr="{{ topicsList }}"></articleList>
+        <barSlider currentTab="{{tab}}" bind:bindNavTap="onNavTap"></barSlider>
+        <login></login>
+        <geTop gotopState="{{isShowTop}}"></geTop>
+    </view>
+</touchGesture>

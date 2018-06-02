@@ -1,0 +1,21 @@
+/* components/go-top/go-top.wxss */
+.goTop{
+    position: fixed;
+    bottom: 30%;
+    right: 0;
+    width: 26rpx;
+    color: gray;
+    padding: 20rpx 10rpx 20rpx 16rpx;
+    text-align: center;
+    z-index: 20;
+    border-radius: 40rpx 0 0 40rpx;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-right: 0;
+    font-size:28rpx;
+    transform: translateX(51rpx);
+    -webkit-transform: translateX(51rpx);
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    transition: .4s;
+}

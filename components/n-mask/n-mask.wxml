@@ -1,0 +1,2 @@
+<!--components/mask.wxml-->
+<view class="mask" style="opacity:{{maskState ?  '1' :'0'}};width: {{maskState ?'100%'  : '0%'}};"  bind:touchstart="_onTap" bindtap="_onTap"></view>

@@ -1,0 +1,23 @@
+<!--pages/content/component/topic-header/topic-header.wxml-->
+<view class="topic-header">
+    <view class="title"> {{topic.title}}</view>
+    <view class="topic-info dis-flex">
+        <navigator  hover-class="none"  url="/pages/user/user?loginname={{topic.author.loginname}}">
+            <view class="head"><image class="img" src="{{topic.author.avatar_url}}"></image></view>
+        </navigator>
+        <view class="changes">
+            <view class="top">
+                <text class="author">{{topic.author.loginname}}</text>
+                <text class="tips is-top" wx:if="{{topic.top}}">置顶</text>
+                <text class="tips tab"  wx:else>{{topic.tab}}</text> 
+            </view>
+            <view class="bottom">
+                <text>{{topic.create_at_now}}前</text><text class="dot"></text>
+                <text>{{topic.visit_count}} 次浏览 </text><text class="dot"></text>
+                <text decode="true">来自&nbsp;{{topic.tab}}</text>
+            </view>
+            <text bindtap="_tapCollect"  wx:if="{{!topic.is_collect}}" class="collect-icon collect iconfont icon-praise"></text>
+            <text bindtap="_tapDeCollect" wx:else class="collect-icon collected iconfont icon-praise"></text>
+        </view>
+    </view>
+</view>

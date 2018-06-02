@@ -1,0 +1,15 @@
+<!--pages/user/component/topic-list.wxml-->
+<view style="position: relative;overflow:hidden;"  wx:for="{{topicsArr}}"  wx:key="item.id">
+    <navigator url="/pages/content/content?id={{item.id}}" hover-start-time="10"  hover-stay-time="300" hover-class="diy-navigator-hover">
+        <view class="topic-item  dis-flex" >
+            <view class="head"><image class="img" src="{{item.author.avatar_url}}"></image></view>
+            <view class="topic-info">
+                <view class="title">{{item.title}}</view> 
+                <view class="box dis-flex flex-justify">
+                    <view class="author"> {{item.author.loginname}}</view>
+                    <view class="from-now">{{item.last_reply_at}}前</view>
+                </view>
+            </view>
+        </view>
+    </navigator>
+</view>

@@ -1,0 +1,2 @@
+<!--components/go-top/go-top.wxml-->
+<view class="goTop" bindtap="_goTop" style="transform: translateX({{gotopState ? '0':'51rpx'}}rpx);">回到顶部</view>

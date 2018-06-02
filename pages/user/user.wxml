@@ -1,0 +1,20 @@
+<!--pages/user.wxml-->
+<view class="user-container">
+     <view class="header">
+        <view class="head"><image class="img" src="{{user.avatar_url}}"></image></view>
+        <view class="name">{{user.loginname||'CNode'}}</view>
+        <view class="url">{{user.loginname}}@github.com</view>
+        <view class="change dis-flex flex-justify">
+            <view class="created-date">注册时间：{{user.create_at || '00-00-00'}}</view>
+            <view class="integral">积分:{{user.score||' 0'}}</view>
+        </view>
+    </view> 
+
+    <view class="footer">
+        <topicSwiper>
+                <topicList slot="recent-replies" topicsArr="{{user.recent_replies}}"></topicList>
+                <topicList slot="recent-topics" topicsArr="{{user.recent_topics}}"></topicList>
+                <topicList slot="collect-topic" topicsArr="{{collectTopic}}"></topicList>
+        </topicSwiper>
+    </view>
+</view>

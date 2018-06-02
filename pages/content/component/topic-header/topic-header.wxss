@@ -1,0 +1,55 @@
+/* pages/content/component/topic-header/topic-header.wxss */
+@import "/static/css/common.wxss";
+
+.topic-header .topic-info {
+    position: relative;
+}
+.topic-header .title{
+    font-size: 32rpx;
+    font-weight: bold;
+}
+.topic-header .changes{
+    margin-top:8rpx; 
+}
+.topic-header .topic-info{
+    margin-top: 32rpx;
+    font-size: 32rpx;
+}
+.topic-header .topic-info .bottom{
+    color: #888;
+    font-size: 24rpx;
+    margin-top: 10rpx;
+}
+.topic-header .head{
+    width: 90rpx;
+    height: 90rpx;
+    background: #efefef;
+    margin-right: 40rpx;
+    border-radius: 50%;
+}
+.topic-header .head .img{
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+}
+
+.collect-icon {
+    position: absolute;
+    right: 20rpx;
+    top: 20%;
+    font-size: 50rpx;
+}
+
+.topic-header .collect{
+    color: #888;
+}
+
+.topic-header .collected {
+    color: #80bd01;
+}
+
+.topic-header .tips{
+    font-size: 22rpx;
+    line-height: 50rpx;
+    margin-left: 40rpx;
+}

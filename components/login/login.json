@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+      "mask": "../n-mask/n-mask"
+  }
+}

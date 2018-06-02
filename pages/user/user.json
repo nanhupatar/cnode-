@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "topicList": "./component/topic-list/topic-list",
+        "topicSwiper": "./component/topic-swiper/topic-swiper"
+    }
+}

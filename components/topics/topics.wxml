@@ -1,0 +1,33 @@
+<!--article-list.wxml-->
+<view class="artile-list">
+    <view class="article-item" wx:for="{{listArr}}" wx:for-item="item" wx:key="item.id">
+        <view style="position: relative;overflow:hidden;" >
+            <navigator url="/pages/content/content?id={{item.id}}"  hover-start-time="10"  hover-stay-time="300" hover-class="diy-navigator-hover">
+                <view class="article-top dis-flex flex-justify">
+                    <text class="tips is-top" wx:if="{{item.top}}">置顶</text>
+                    <text class="tips tab" wx:else >{{ item.tab }}</text>
+                    <view class="time-info">
+                        <text class="replies" decode="true">{{item.reply_count}}&nbsp;</text>/<text decode="true" class="visit">&nbsp;{{item.visit_count}}</text>
+                        <text class="dot"></text><text class="time-length">{{item.last_reply_at}}前</text>
+                    </view>
+                </view>
+                <view class="article-info">
+                    <text class="title">{{item.title}}</text>
+                    <text class="abstract">{{item.abs}}</text>
+                </view>
+            </navigator>
+        </view>
+        <view style="position: relative;overflow:hidden;" >
+            <navigator  hover-start-time="10"  hover-stay-time="300" hover-class="diy-navigator-hover" url="/pages/user/user?loginname={{item.author.loginname}}">
+                <view class="bottom-info dis-flex flex-justify">
+                    <view class="author-con dis-flex flex-items-center">
+                        <image class="head" src="{{item.author.avatar_url}}"></image>
+                        <text class="name">{{item.author.loginname}}</text>
+                    </view>
+                    <view class="creation-time" decode="true">创建于：{{item.create_at}}</view>
+                </view>
+            </navigator>
+            <view class="good" wx:if="{{item.good}}">精华</view>
+        </view>
+    </view>
+</view>

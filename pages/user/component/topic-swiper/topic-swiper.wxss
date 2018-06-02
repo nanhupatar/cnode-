@@ -1,0 +1,39 @@
+/* pages/user/component/topic-swiper/topic-swiper.wxss */
+
+page,.user-container ,.footer,.topic-swipre{
+    height: 100%;
+}
+.swiper-indicator{
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    background: #041114;
+    position: relative;
+}
+.swiper-indicator .indicator-item{
+    display: inline-block;
+    width: 33.33%;
+    color: #6b6b6b;
+    text-align: center;
+    font-size:28rpx;
+    transition:  .6s;
+    -webkit-transition:  .6s;
+}
+
+.swiper-item{
+    width: 100%;
+    background: #fff;
+    overflow: auto;
+}
+
+
+.slider-line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 33.33%;
+    height: 6rpx;
+    background: #80bd01;
+    transition: transform .6s;
+    -webkit-transition: transform .6s;
+}

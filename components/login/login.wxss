@@ -1,0 +1,41 @@
+/* components/login.wxss */
+@import "/static/css/common.wxss";
+
+.login-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 84%;
+    margin: auto;
+    height: 300rpx;
+    background: #fff;
+    border-radius: 12rpx; 
+    padding:60rpx 20rpx 20rpx;
+    z-index: 10;
+}
+.token-input{
+    height: 100rpx;
+    color: #999;
+    font-size: 24rpx;
+    padding-left: 20rpx;
+    border-bottom: 6rpx solid #80bd01;
+}
+.submit{
+    margin-top: 40rpx;
+    font-size: 28rpx;
+    background: #80bd01;
+    border: none;
+}
+.login-footer{
+    color: #999;
+    font-size: 28rpx;
+    margin-top: 40rpx;
+}
+.icon-Scancode{
+    vertical-align: middle;
+}
+.login-tips{
+    color:#80bd01;
+}

@@ -1,0 +1,60 @@
+/* article-list.wxss */
+@import "../../static/css/common.wxss";
+
+.article-item{
+    width: 750rpx;
+    background: #fff;
+    box-shadow: 0 2rpx 8rpx #c5c5c5;
+    margin-bottom: 20rpx;
+    position: relative;
+    overflow: hidden;
+}
+.article-top,.article-info,.bottom-info {
+    padding: 0 38rpx;
+}
+.article-top{
+    font-size: 24rpx;
+    margin-bottom: 20rpx;
+    padding-top: 16rpx;
+}
+.article-top .time-info{
+    color: #888;
+}
+.article-top .replies{
+    color: #80bd01;
+}
+
+.article-info{
+    padding-bottom:  32rpx;
+}
+.article-info .title{
+    font-size: 32rpx;
+    display: block;
+}
+.article-info .abstract{
+     font-size: 28rpx;
+     color: #888;
+     display: block;
+     margin-top: 16rpx;
+}
+
+.bottom-info{
+    padding-top: 32rpx;
+    border-top: 2rpx solid #ccc;  
+    font-size: 28rpx;
+    padding-bottom: 32rpx;
+}
+.bottom-info .head{
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+}
+.bottom-info .name{
+    line-height: 50rpx;
+}
+.bottom-info .creation-time{
+    line-height: 50rpx;
+    color: #888;
+    font-size: 24rpx;
+}

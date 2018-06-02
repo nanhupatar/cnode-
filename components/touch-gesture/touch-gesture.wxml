@@ -1,0 +1,4 @@
+<!--components/touch-gesture/touch-gesture.wxml-->
+<view  bindtouchmove="_handletouchmove"  bindtouchstart = "_handletouchtart"  bindtouchend="_handletouchend">
+   <slot></slot>
+</view>

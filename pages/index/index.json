@@ -1,0 +1,13 @@
+{
+    "usingComponents": {
+        "articleList": "/components/topics/topics",
+        "barSlider": "/components/bar-slider/bar-slider",
+        "touchGesture": "/components/touch-gesture/touch-gesture",
+        "geTop": "/components/go-top/go-top",
+        "login": "/components/login/login"
+    },
+    "backgroundColor": "#ccc",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+}

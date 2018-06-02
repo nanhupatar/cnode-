@@ -1,0 +1,11 @@
+{
+    "navigationBarTitleText": "话题",
+    "usingComponents": {
+        "replies": "./component/replies/replies",
+        "topicHeader": "./component/topic-header/topic-header",
+        "replyPopup": "./component/reply-popup/reply-popup",
+        "mask": "/components/n-mask/n-mask",
+        "login": "/components/login/login",
+        "touchGesture": "/components/touch-gesture/touch-gesture"
+    }
+}

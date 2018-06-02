@@ -1,0 +1,23 @@
+<!--pages/content.wxml-->
+<touchGesture bind:bindCurrentGesture="onCurrentGesture">
+    <view class="topic-container">
+        <view class="good" wx:if="{{topic.good}}">精华</view>
+        <topicHeader topic="{{topic}}"></topicHeader>
+        <view class="topic-content">
+            <import src="../../towxml/entry.wxml"/> 
+            <template is="entry" data="{{...topicCon}}"/> 
+        </view>
+    </view>
+    <replies topicData="{{topic}}" bind:bindTapReply="onTapReply"></replies>
+    <view class="reply-btn iconfont icon-icon_reply animated {{replyBtnState ? 'fadeInRight' : 'fadeOutRight'}}" bindtap="tapReply"></view>
+    
+    <mask bind:clickMask="closePopup" maskState="{{popupState}}"></mask>
+    <replyPopup 
+        value="{{loginname}}" 
+        pupupState="{{popupState}}" 
+        topicId="{{topic.id}}"  
+        replyId="{{replyId}}"  
+        bind:bindRepliesSuccess="onRepliesSuccess">
+    </replyPopup>
+    <login isOpenLogin="{{loginState}}"></login>
+</touchGesture>
