@@ -5,7 +5,8 @@ page,.user-container ,.footer,.topic-swipre{
     height: 100%;
 }
 .user-container .header{
-    background: url(http://p86t9neoe.bkt.clouddn.com/user_header_bg.png);
+    background: url(https://github.com/nanhupatar/static/blob/master/conde-/2018-6/login_header_bg.png?raw=true) no-repeat;
+    background-size: 100% 100%;
     color:#fff;
     font-size: 28rpx;
     padding: 40rpx 0 20rpx;
@@ -28,7 +29,7 @@ page,.user-container ,.footer,.topic-swipre{
     padding: 8rpx 0;
 }
 .user-container .header .url{
-    color: #6b6b6b;
+    color: #dfd9d9;
     text-decoration: underline;
 }
 .user-container .header .change{

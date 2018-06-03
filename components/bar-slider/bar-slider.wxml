@@ -2,6 +2,7 @@
 <view class="slider-wrap" animation="{{sliderAin}}">
     <view class="slider-header">
         <image class="head-bg" src="/static/images/main_nav_header_bg.png"></image>
+        <text class="head-moon iconfont icon-yueliang"></text>
         <view class="head-box" >
             <navigator wx:if="{{user.loginname}}" hover-class="none"  url="/pages/user/user?loginname={{user.loginname}}">
                 <view class="head">
@@ -28,10 +29,10 @@
                     bindtap="_triggerNavTap" 
                     url="index?tab={{item.tab}}" 
                     class="item {{currentTab ===  item.tab ? 'activa': ''}}">
-            <txt class="iconfont {{item.icon}}"></txt>{{item.name}}</navigator>
+            <text class="iconfont {{item.icon}}"></text>{{item.name}}</navigator>
         </view>
     </view>
 </view>
- <view class="slider-switch iconfont  icon-mulu" wx:if="{{sliderState}}" bindtap="_sliderswitch"></view> 
+ <view class="slider-switch iconfont icon-nodejs" wx:if="{{sliderState}}" bindtap="_sliderswitch"></view> 
 <mask maskState="{{!sliderState}}" bind:clickMask="_onClickMask"></mask>
 <login isOpenLogin="{{isOpenLogin}}" bind:loginStateSync="_LoginSateSync"  bind:loginSuccess="_onLoginSuccess" isMask="{{false}}"></login>

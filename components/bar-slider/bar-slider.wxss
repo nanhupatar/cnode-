@@ -30,6 +30,14 @@
     height: 350rpx;
 }
 
+.head-moon {
+    font-size: 50rpx;
+    position: absolute;
+    top: 60rpx;
+    right: 70rpx;
+    color: #fff;
+    transform: rotate(-30deg)
+}
 .slider-wrap .slider-header .head-bg {
     width: 100%;
     height: 400rpx;
@@ -99,8 +107,8 @@
 
 .slider-switch {
     position: fixed;
-    bottom: 60rpx;
-    right: 40rpx;
+    bottom: 100rpx;
+    right: 60rpx;
     border-radius: 50%;
     background: #80bd01;
     font-size:100rpx;
@@ -108,4 +116,9 @@
     text-align: center;
     padding: 0 4rpx;
     box-shadow: 0 0 20rpx #999;
+}
+
+.nav .item:last-child {
+    padding-bottom: 20rpx;
+    border-bottom: 1px solid #ccc;
 }

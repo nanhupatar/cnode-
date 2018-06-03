@@ -26,6 +26,7 @@
     background: #efefef;
     margin-right: 40rpx;
     border-radius: 50%;
+    overflow: hidden;
 }
 .topic-header .head .img{
     width: 90rpx;

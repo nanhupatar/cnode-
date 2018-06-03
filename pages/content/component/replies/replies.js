@@ -1,7 +1,6 @@
 // pages/content/component/replies/replies.js
 const {
     globalData,
-    towxml,
     cnodeApi
         } = getApp();
 const { showSuccessToast, showErrorToast } = require('../../../../utils/util');
@@ -28,12 +27,6 @@ Component({
      * 组件的方法列表
      */
     methods: {
-        /**
-         * 点击回复
-         */
-        _tapReply(e){
-            this.triggerEvent('bindTapReply', { replyId: e.currentTarget.dataset.replieid, 'loginname': e.currentTarget.dataset.loginname});
-        },
         /**
          * 评论点赞
         */

@@ -1,9 +1,7 @@
 //app.js
-const Towxml = require('/towxml/main');
 const CNodeApi = require("/utils/CNodeApi");
 
 App({
-    towxml: new Towxml(),
     cnodeApi: new CNodeApi(),
     onLaunch: function () {
         wx.showLoading({

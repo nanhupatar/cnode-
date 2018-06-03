@@ -206,37 +206,7 @@ module.exports = class CNodeApi {
 
         });
     }
-    /**
-     * 新建评论
-     * @param {String} id 主题 id
-     * @param {String} content 评论主体内容 
-     * @param {String} replyId 如果这个评论是对另一个评论的回复，请务必带上此字段。这样前端就可以构建出评论线索图。
-     * @return {Promise[json]} 示例：{success: true, reply_id: '5433d5e4e737cbe96dcef312'}
-     */
-    buildReplies(id, content, replyId ){
-        return new Promise((resolve, reject) => {
-            const token = this.checkLogin();
-            if (!token) return reject('No login!');
 
-            wx.request({
-                url: `${this.api}/topic/${id}/replies`,
-                data: {
-                    content: content,
-                    reply_id: replyId||'',
-                    accesstoken: token
-                },
-                method: 'POST',
-                dataType: 'json',
-                success(res) {
-                    resolve(res.data);
-                },
-                fail(err) {
-                    reject(err);
-                }
-            });
-
-        });
-    }
     /**
      * 检查是否登录
      * @param {boolean} isShowModal 如果没登录是否打开弹窗，需要挂载在 Page 上，示例：Page({checkLogin: cnodeApi.checkLogin});

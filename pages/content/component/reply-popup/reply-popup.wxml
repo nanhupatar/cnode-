@@ -1,9 +1,0 @@
-<!--pages/content/component/reply-popup/reply-popup.wxml-->
-<view class="reply-popup  animated {{pupupState ? 'fadeInUp' : ''}}" wx:if="{{pupupState}}">
-    <form bindsubmit="_fromsubmit">
-        <textarea  value="{{value}}" name="textareaValue" maxlength="-1" adjust-position="true" class="reply-textarea" placeholder="说点什么吧..." fixed="true"></textarea>
-        <button  loading="{{submitState}}"  disabled="{{submitState}}" type="primary" form-type="submit" class="reply-sub">
-            <text class=" iconfont icon-fabu"></text>回复
-        </button>
-    </form>
-</view>

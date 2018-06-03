@@ -9,15 +9,15 @@ Component({
    */
   properties: {
       isOpenLogin: {
-            type: 'boolean',
-            value: false,
-            observer(newVal){
-                newVal ? this._showLogin() : this._hideLogin();
-            }
-        },
-        isMask: {
-            type: 'boolean',
-            value: true
+          type: 'boolean',
+          value: false,
+          observer(newVal){
+              newVal ? this._showLogin() : this._hideLogin();
+          }
+      },
+      isMask: {
+          type: 'boolean',
+          value: true
         }
   },
 

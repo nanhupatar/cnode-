@@ -1,7 +1,5 @@
 /* pages/content/component/replies/replies.wxss */
 @import "/static/css/common.wxss";
-@import '/towxml/style/main.wxss';
-@import '/towxml/style/theme/light.wxss';
 
 .replies-container{
     background: #fff;

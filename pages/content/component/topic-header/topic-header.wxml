@@ -9,7 +9,7 @@
             <view class="top">
                 <text class="author">{{topic.author.loginname}}</text>
                 <text class="tips is-top" wx:if="{{topic.top}}">置顶</text>
-                <text class="tips tab"  wx:else>{{topic.tab}}</text> 
+                <text class="tips tab"  wx:else>{{topic.tab?topic.tab:'未知'}}</text> 
             </view>
             <view class="bottom">
                 <text>{{topic.create_at_now}}前</text><text class="dot"></text>

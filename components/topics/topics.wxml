@@ -5,7 +5,7 @@
             <navigator url="/pages/content/content?id={{item.id}}"  hover-start-time="10"  hover-stay-time="300" hover-class="diy-navigator-hover">
                 <view class="article-top dis-flex flex-justify">
                     <text class="tips is-top" wx:if="{{item.top}}">置顶</text>
-                    <text class="tips tab" wx:else >{{ item.tab }}</text>
+                    <text class="tips tab" wx:else >{{ item.tab? item.tab:"未知" }}</text>
                     <view class="time-info">
                         <text class="replies" decode="true">{{item.reply_count}}&nbsp;</text>/<text decode="true" class="visit">&nbsp;{{item.visit_count}}</text>
                         <text class="dot"></text><text class="time-length">{{item.last_reply_at}}前</text>
