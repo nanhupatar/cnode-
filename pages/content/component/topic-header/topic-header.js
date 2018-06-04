@@ -1,6 +1,7 @@
 // pages/content/component/topic-header/topic-header.js
 const {
     globalData,
+    towxml,
     cnodeApi
         } = getApp();
 const { showSuccessToast, showErrorToast } = require('../../../../utils/util');

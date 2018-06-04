@@ -1,14 +1,14 @@
 <!--pages/content.wxml-->
-<import src="../../wxParse/wxParse.wxml"/> 
-
 <touchGesture bind:bindCurrentGesture="onCurrentGesture">
     <view class="topic-container">
         <view class="good" wx:if="{{topic.good}}">精华</view>
         <topicHeader topic="{{topic}}"></topicHeader>
         <view class="topic-content">
-              <template is="wxParse" data="{{wxParseData:topicCon.nodes}}"/> 
+            <import src="../../towxml/entry.wxml"/> 
+            <template is="entry" data="{{...topicCon}}"/> 
         </view>
     </view>
     <replies topicData="{{topic}}" bind:bindTapReply="onTapReply"></replies>
     <login isOpenLogin="{{loginState}}"></login>
+    <goTop gotopState="{{gotopState}}"></goTop>
 </touchGesture>

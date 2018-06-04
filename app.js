@@ -1,7 +1,9 @@
 //app.js
+const Towxml = require('/towxml/main');
 const CNodeApi = require("/utils/CNodeApi");
 
 App({
+    towxml: new Towxml(),
     cnodeApi: new CNodeApi(),
     onLaunch: function () {
         wx.showLoading({
@@ -10,7 +12,6 @@ App({
     },
     globalData: {
         userInfo: null,
-        
         cnode: {
             api: "https://cnodejs.org/api/v1",
             tab: {

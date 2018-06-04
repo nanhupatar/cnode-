@@ -1,6 +1,7 @@
 <!--article-list.wxml-->
 <view class="artile-list">
     <view class="article-item" wx:for="{{listArr}}" wx:for-item="item" wx:key="item.id">
+        <view class="good" wx:if="{{item.good}}">精华</view>
         <view style="position: relative;overflow:hidden;" >
             <navigator url="/pages/content/content?id={{item.id}}"  hover-start-time="10"  hover-stay-time="300" hover-class="diy-navigator-hover">
                 <view class="article-top dis-flex flex-justify">
@@ -27,7 +28,6 @@
                     <view class="creation-time" decode="true">创建于：{{item.create_at}}</view>
                 </view>
             </navigator>
-            <view class="good" wx:if="{{item.good}}">精华</view>
         </view>
     </view>
 </view>

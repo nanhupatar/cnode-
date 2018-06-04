@@ -13,7 +13,7 @@ page,.user-container ,.footer,.topic-swipre{
 .swiper-indicator .indicator-item{
     display: inline-block;
     width: 33.33%;
-    color: #6b6b6b;
+    color: #ccc;
     text-align: center;
     font-size:28rpx;
     transition:  .6s;

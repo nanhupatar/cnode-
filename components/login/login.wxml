@@ -1,13 +1,11 @@
 <!--components/login.wxml-->
 <view class="login-container animated {{classAnim}}" wx:if="{{isOpenLogin}}">
-    <image class="close" bindtap="_hideLogin" src="http://p86t9neoe.bkt.clouddn.com/close.svg"></image>
-    <form bindsubmit="_submit">
-        <input class="token-input" value="{{token}}" name="token" type="text" placeholder="Access Token :"></input>
-        <button  loading="{{submitState}}"  disabled="{{submitState}}" class="submit" formType="submit" type="primary" >登录 </button>
-        <view class="login-footer dis-flex flex-justify">
-            <view class="scan-code" bindtap="_scanCodeLogin"><text class="iconfont icon-Scancode"></text> 扫码登录</view>
-            <view class="login-tips" bindtap="_showTips">如何获取 Access Token ?</view>
-        </view>
-    </form>
+    <!-- <text class="iconfont icon-guanbi close" bindtap="_hideLogin"></text>     
+    <view class="scan-code" bindtap="_scanCodeLogin">扫码登录</view> -->
+    <view class='login-tittle flex-all-center'>您尚未登录</view>
+    <view class='login-footer dis-flex'>
+        <view class='login-conf flex-all-center' bindtap="_scanCodeLogin">扫描二维码</view>
+        <view class='login-conc flex-all-center' bindtap="_hideLogin">暂时不登录</view>
+    </view>
 </view>
 <view wx:if="{{isMask}}"><mask maskState="{{isOpenLogin}}"></mask></view>

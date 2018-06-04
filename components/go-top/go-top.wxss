@@ -18,4 +18,5 @@
     -webkit-transition: .4s;
     -moz-transition: .4s;
     transition: .4s;
+    overflow: hidden;
 }

@@ -1,5 +1,7 @@
 /* pages/content.wxss */
 @import "/static/css/common.wxss";
+@import '/towxml/style/main.wxss';
+@import '/towxml/style/theme/light.wxss';
 
 .topic-container {
     background: #fff;
@@ -13,6 +15,21 @@
 .topic-container .good{
     top: 68rpx;
 }
+
+.reply-btn{
+    position: fixed;
+    bottom: 60rpx;
+    right: 40rpx;
+    border-radius: 50%;
+    background: #80bd01;
+    font-size:100rpx;
+    color: #fff; 
+    text-align: center;
+    padding: 20rpx 24rpx;
+    box-shadow: 0 0 20rpx #999;
+    font-size: 60rpx;
+}
+
 
 .h2w__main{
     margin: 0;

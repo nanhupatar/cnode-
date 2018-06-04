@@ -30,6 +30,12 @@
                     url="index?tab={{item.tab}}" 
                     class="item {{currentTab ===  item.tab ? 'activa': ''}}">
             <text class="iconfont {{item.icon}}"></text>{{item.name}}</navigator>
+
+           <navigator 
+                  class='item' 
+                  open-type="navigate" 
+                  url="../about/about">
+                  <text class='iconfont icon-guanyu'></text>关于</navigator>
         </view>
     </view>
 </view>

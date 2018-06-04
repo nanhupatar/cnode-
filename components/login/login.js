@@ -17,7 +17,7 @@ Component({
       },
       isMask: {
           type: 'boolean',
-          value: true
+          value: false
         }
   },
 
@@ -27,7 +27,8 @@ Component({
   data: {
     token: '',
     classAnim: '',
-    submitState: false
+    submitState: false,
+    maskIndex: false
   },
 
   /**
@@ -38,11 +39,12 @@ Component({
        * 显示登录
       */
     _showLogin(){
-        
+      
         this.setData({
             'isOpenLogin': true,
             'classAnim': 'fadeInDown'
         });
+        console.log('哈哈' + this.data.isMask)
         this._triggerLoginStateSync();
     },
     /**
@@ -106,27 +108,6 @@ Component({
                   }
               }
           })
-      },
-      /**
-       * 显示提示
-       */
-      _showTips(){
-          wx.showModal({
-              title:'如何获取 Access Token?',
-              content: `在CNode社区网站登录你的帐号 > 
-                            然后在右上角找到[设置]按钮 > 
-                            点击进入后将页面滑动最底部 > 
-                            查看你的 Access Token，或找到二维码扫码登录。`,
-              showCancel: false
-            });
-      },
-      /**
-       * 获得表单提交 token
-      */
-      _submit(e){
-          const token = e.detail.value.token;
-          if (!token.length ) return false;
-          this._userLogin(token);
-    }
+      }
   }
 })

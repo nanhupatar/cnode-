@@ -40,6 +40,10 @@ Page({
                     recent_replies[key].last_reply_at = fromNowTime(recent_replies[key].last_reply_at);
                 }
 
+                for (const key in userCollectTopic.data) {
+                  userCollectTopic.data[key].last_reply_at = fromNowTime(userCollectTopic.data[key].last_reply_at);
+                }
+
                 this.setData({
                     'user': user.data,
                     'collectTopic': userCollectTopic.data

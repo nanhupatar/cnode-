@@ -1,0 +1,8 @@
+<!--pages/about/about.wxml-->
+<view class='about-container'>
+    <view class='about-header-bg'></view>
+    <view wx:for="{{aboutArry}}" wx:for-item="item" wx:key="" class='item'>
+        <view class='item-header'>{{item.header}}</view>
+        <view class='item-content'>{{item.content}}</view>
+    </view>
+</view>

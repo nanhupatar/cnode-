@@ -6,8 +6,8 @@
     border-bottom: 2rpx solid #d9dada; 
 }
 .topic-item .head{
-    width: 100rpx;
-    height: 100rpx;
+    width: 90rpx;
+    height: 90rpx;
     border-radius:50%;
     overflow:hidden;
 }

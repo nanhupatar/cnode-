@@ -1,5 +1,7 @@
 /* pages/content/component/replies/replies.wxss */
 @import "/static/css/common.wxss";
+@import '/towxml/style/main.wxss';
+@import '/towxml/style/theme/light.wxss';
 
 .replies-container{
     background: #fff;
@@ -37,11 +39,11 @@
 }
 .replies-container .operation{
     position: absolute;
-    right: 38rpx;
+    right: 0rpx;
     top: 32rpx;
 }
 .replies-container .operation .iconfont{
-    font-size: 60rpx;
+    font-size: 50rpx;
     color: #888;
 }
 .replies-container .operation  .icon-icon_reply{

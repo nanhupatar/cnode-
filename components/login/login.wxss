@@ -9,33 +9,34 @@
     right: 0;
     width: 84%;
     margin: auto;
-    height: 300rpx;
-    background: #fff;
+    height: 250rpx;
     border-radius: 12rpx; 
-    padding:60rpx 20rpx 20rpx;
-    z-index: 10;
+    z-index: 20;
+    background: #fff;
+    overflow: hidden;
 }
-.token-input{
-    height: 100rpx;
-    color: #999;
-    font-size: 24rpx;
-    padding-left: 20rpx;
-    border-bottom: 6rpx solid #80bd01;
+.scan-code {
+    width: 80%;
+    background: #409EFF;
 }
-.submit{
-    margin-top: 40rpx;
-    font-size: 28rpx;
-    background: #80bd01;
-    border: none;
+
+.login-tittle {
+    height: 60%;
+    border-bottom: 1px solid #ccc;
+    font-size: 40rpx;
 }
-.login-footer{
-    color: #999;
-    font-size: 28rpx;
-    margin-top: 40rpx;
+
+.login-footer {
+    height: 40%;
+    font-size: 30rpx;
 }
-.icon-Scancode{
-    vertical-align: middle;
+
+.login-conf {
+    flex-grow: 1;
+    border-right: 1px solid #ccc;
+    color: #99CCCC;
 }
-.login-tips{
-    color:#80bd01;
+
+.login-conc {
+    flex-grow: 1;
 }
