@@ -38,13 +38,11 @@ Page({
                     replie.content = this.towxmlHtml(replie.content);
                     replie.create_at = fromNowTime(replie.create_at);
                 }
-
-                wx.hideLoading();
-
                 this.setData({
                     'topic': formtTopicData(data.data),
                     'topicCon': topicCon
                 });
+                wx.hideLoading();
             }
         }).catch(err => {
             console.error(err)

@@ -15,20 +15,8 @@ Page({
           content:"https://github.com/nanhupatar/cnode-"
         },
         {
-          header:"关于作者",
-          content:'www.magicjs.cn'
-        },
-        {
-          header:"关于cnode",
-          content:"http://cnodejs.org"
-        },
-        {
-          header:"意见反馈",
-          content:"nanhupatar@foxmail.com"
-        },
-        {
           header:"说明",
-          content:"基于cnodeApi开发，模块化开发，参考了github上的一些代码，详情看项目的readme文件"
+          content:"基于cnodeApi开发，模块化开发"
         }
     ]
   
