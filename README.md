@@ -17,19 +17,19 @@ cnode社区第三方客户端，小程序端
 > 五种不同文章类目切换
 
 主页效果,用户详情：   
-<figure class="half">
+<figure>
     <img src='./Screenshots/首页.jpg' width='300px' height='570px'>
     <img src='./Screenshots/用户详情.jpg' width='300px' height='570px'>
 </figure>
 
 侧边栏效果:  
-<figure class="half">
+<figure>
     <img src='./Screenshots/侧边栏1.jpg' width='300px' height='570px'>
     <img src='./Screenshots/侧边栏2.jpg' width='300px' height='570px'>
 </figure>
   
 登录,关于：
-<figure class="half">
+<figure>
     <img src='./Screenshots/登录.jpg' width='300px' height='570px'>
     <img src='./Screenshots/关于.jpg' width='300px' height='570px'>
 </figure>
