@@ -29,10 +29,10 @@ cnode社区第三方客户端，小程序端
 </figure>
   
 登录,关于：
-<figure>
-    <img src='./Screenshots/登录.jpg' width='300px' height='570px'>
-    <img src='./Screenshots/关于.jpg' width='300px' height='570px'>
-</figure>
+
+<img src='./Screenshots/登录.jpg' width='300px' height='570px'>
+<img src='./Screenshots/关于.jpg' width='300px' height='570px'>
+
   
 文档结构：
 ```
