@@ -1,5 +1,6 @@
 <!--components/bar-slider.wxml-->
-<view class="slider-wrap" animation="{{sliderAin}}">
+<view class="slider-wrap" animation="{{sliderAin}}"
+        catchtouchmove='_onNoScroll'>
     <view class="slider-header">
         <image class="head-bg" src="/static/images/main_nav_header_bg.png"></image>
         <text class="head-moon iconfont icon-yueliang"></text>

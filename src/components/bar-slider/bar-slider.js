@@ -165,6 +165,12 @@ Component({
                 'sliderAin': animation.export(),
                 'sliderState': true
             });
+        },
+        /**
+         * 处理滑动带动不可见层的问题，捕捉touchmove事件，不冒泡
+        */
+        _onNoScroll(ev) {
+          // console.log(ev)
         }
     }
 })
